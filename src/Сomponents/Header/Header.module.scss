@@ -1,0 +1,37 @@
+.hederLogo {
+  width: 200px;
+  height: auto;
+}
+.hederText {
+  width: 500px;
+  height: auto;
+}
+.header {
+  background-image: url(../../pictures/GoldFon1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header:after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.51);
+  width: 1400 px;
+  height: 940 px;
+  top: 0 rem;
+  left: 0 rem;
+  position: absolute;
+}
+.flexConteiner {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  padding-right: 25%;
+  padding-left: 15%;
+  align-items: center;
+}
+.hederNav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(224, 197, 197);
+  height: 50px;
+  border: black;
+}
