@@ -1,7 +1,9 @@
-import wogyLogoDark from '../../pictures/wogyDark.png'
-import wogyText3 from '../../pictures/wogy-text-3.png'
+import wogyLogoDark from '../../resources/pictures/wogyDark.png'
+import wogyText3 from '../../resources/pictures/wogy-text-3.png'
+import s from './Footer.module.scss';
+
 const Footer=()=>(
-  <footer>
+  <footer className={s.footer}>
         <div>Присоединяйтесь</div>
         <div>
           <a
@@ -13,7 +15,7 @@ const Footer=()=>(
                   <img src="" alt="" />
           иконка инстаграм
               </a>
-            <div>Магазин Чюрлениса</div>
+            <div className= {s.FooterText}>Магазин Чюрлениса</div>
           </div>  
           <div> 
           <a
@@ -24,11 +26,11 @@ const Footer=()=>(
               >
           иконка инстаграм
               </a>
-            <div>Магазин Дзержинского</div>
+            <div className={s.FooterText}>Магазин Дзержинского</div>
         </div>      
         <div>
-          <img src={wogyLogoDark} alt="" />
-          <img src={wogyText3} alt="" />
+          {/* <img src={wogyLogoDark} alt="" /> */}
+          {/* <img src={wogyText3} alt="" /> */}
 
         </div>
       </footer>

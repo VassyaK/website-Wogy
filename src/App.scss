@@ -1,4 +1,5 @@
-@import "nullStyle";
+@import "./resources/nullStyle.scss";
+@use "variables" as vars;
 .App {
   text-align: center;
 }

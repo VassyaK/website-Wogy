@@ -7,19 +7,11 @@
   height: auto;
 }
 .header {
-  background-image: url(../../pictures/GoldFon1.jpg);
+  background-image: url(../../resources/pictures/GoldFon1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.header:after {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.51);
-  width: 1400 px;
-  height: 940 px;
-  top: 0 rem;
-  left: 0 rem;
-  position: absolute;
-}
+
 .flexConteiner {
   display: flex;
   justify-content: space-around;
@@ -29,9 +21,21 @@
   align-items: center;
 }
 .hederNav {
+  background-color: #f4d9b9;
   display: flex;
-  justify-content: center;
-  background-color: rgb(224, 197, 197);
-  height: 50px;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
   border: black;
+  padding: 12px 0;
+  align-items: center;
+  font-family: "pfdintextcondpro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  box-sizing: border-box;
 }
