@@ -1,6 +1,7 @@
 import s from './StoreWogyBY.module.scss';
 
-const StoreWogyBY=()=>(
+
+const StoreWogyBY= () =>(
   <div className={s.storeWogyBY}>
     wogy.by
   </div>

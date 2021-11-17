@@ -1,6 +1,9 @@
 import wogyLogo from '../../resources/pictures/wogyDark.png'
 import wogyText11 from '../../resources/pictures/wogy-text-black-11.png'
 import s from './Header.module.scss';
+import { NavLink } from 'react-router-dom';
+import BasicMenu from './HeaderMenu/HeaderMenu';
+import BasicButtons from '../Button/Button';
 
 
 
@@ -13,9 +16,11 @@ const Header =()=>(
     
     <div className={s.hederNav}>
       <div className={s.headerContainer}>
-        <div>Главная</div>
-        <div>Магазины</div>
-        <div>Информация</div>
+        <div>
+        <NavLink to='/home'><BasicButtons text='Главная'/></NavLink>
+        </div>
+        <BasicMenu />        
+        <div><NavLink to='/inform'><BasicButtons text='Информация'/></NavLink></div>
         <a
         
         href="https://www.instagram.com/wogy_malinovka/"
