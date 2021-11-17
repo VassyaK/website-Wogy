@@ -21,7 +21,7 @@
   align-items: center;
 }
 .hederNav {
-  background-color: #f4d9b9;
+  background-color: #dfc3c4;
   display: flex;
   justify-content: flex-end;
   padding-right: 25px;
@@ -39,4 +39,7 @@
   font-size: 20px;
   box-sizing: border-box;
   text-transform: uppercase;
+}
+a.headerLink {
+  color: dimgrey;
 }

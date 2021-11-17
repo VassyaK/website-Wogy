@@ -10,18 +10,19 @@ import BasicButtons from '../Button/Button';
 const Header =()=>(
   <header className={s.header}>
     <div className={s.flexConteiner}>
-      <div ><img className={s.hederLogo} src={wogyLogo} alt=""/></div>
-      <div className={s.hederTextConteiner}><img className={s.hederText} src={wogyText11} alt="" /></div>
+      {/* <div ><img className={s.hederLogo} src={wogyLogo} alt=""/></div>
+      <div className={s.hederTextConteiner}><img className={s.hederText} src={wogyText11} alt="" /></div> */}
     </div>
     
     <div className={s.hederNav}>
       <div className={s.headerContainer}>
         <div>
-        <NavLink to='/home'><BasicButtons text='Главная'/></NavLink>
+        <NavLink to='/'><BasicButtons className={s.headerLink} text='Главная'/></NavLink>
         </div>
+        
         <BasicMenu />        
         <div><NavLink to='/inform'><BasicButtons text='Информация'/></NavLink></div>
-        <a
+        <a className={s.headerLink}
         
         href="https://www.instagram.com/wogy_malinovka/"
         target="wogy"
@@ -30,7 +31,7 @@ const Header =()=>(
                 
         Магазин на Чюрлёниса 4
             </a>
-            <a
+            <a className={s.headerLink}
         
         href="https://www.instagram.com/wogy.by/?hl=ru"
         target="wogy"

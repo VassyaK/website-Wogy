@@ -6,7 +6,14 @@ import s from './Button.module.scss';
 export default function BasicButtons(props: any) {
   const { text} = props;
   return (    
-      <Button className={s.button}>{text} </Button>      
+      <Button defaultValue={30}
+      sx={{
+        color: 'dimgrey',
+        fontFamily: "pfdintextcondpro",
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: '20px',
+      }}>{text} </Button>      
   );
 }
 

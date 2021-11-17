@@ -17,13 +17,23 @@ export default function BasicMenu() {
 
   return (
     <div >
-      <Button
+      <Button sx={{
+        color: 'dimgrey',
+        fontFamily: "pfdintextcondpro",
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: '20px',
+        // '& .MuiList-root-MuiMenu-list': {
+        //   borderRadius: 0,
+        //   backgroundColor: '#dfc3c4',
+        // },
+      }}
         
-        id="basic-button"
-        aria-controls="basic-menu"
+        // id="basic-button"
+        // aria-controls="basic-menu"
         // aria-haspopup="true"
-        className={s.menu}
-        aria-expanded={open ? 'true' : undefined}
+        // className={s.menu}
+        // aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
         
       >
@@ -37,6 +47,17 @@ export default function BasicMenu() {
         MenuListProps={{
           'aria-labelledby': 'basic-button',
         }}
+        // sx={{
+        //   color: 'dimgrey',
+        //   fontFamily: "pfdintextcondpro",
+        //   fontStyle: 'normal',
+        //   fontWeight: 400,
+        //   fontSize: '20px',
+        //   '& .MuiList-root-MuiMenu-list': {
+        //     borderRadius: 0,
+        //     backgroundColor: '#dfc3c4',
+        //   },
+        // }}
       >
         <MenuItem onClick={handleClose}><NavLink to='/Wogy_Malinovka'>Магазин ул. Чюрлёниса 4</NavLink></MenuItem>
         <MenuItem onClick={handleClose}><NavLink to='/WogyBY'>Магазин пр. Дзержинского 94</NavLink></MenuItem>        
