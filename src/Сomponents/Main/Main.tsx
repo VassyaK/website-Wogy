@@ -1,10 +1,9 @@
-import wogyWhite from '../../pictures/wogyDark.png'
+import Map from '../Map/Map';
 import s from './Main.module.scss';
 
 const Main=()=>(
   <main className={s.main}>
-      Главная страница
-        {/* <img className="main" src={wogyWhite} alt="" /> */}
+      <Map/>
   </main>
 )
 export default Main

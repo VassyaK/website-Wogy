@@ -39,7 +39,7 @@ export default function BasicMenu() {
       >
         Магазины
       </Button>
-      <Menu
+      <Menu className={s.qweq}
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
@@ -59,8 +59,14 @@ export default function BasicMenu() {
         //   },
         // }}
       >
-        <MenuItem onClick={handleClose}><NavLink to='/Wogy_Malinovka'>Магазин ул. Чюрлёниса 4</NavLink></MenuItem>
-        <MenuItem onClick={handleClose}><NavLink to='/WogyBY'>Магазин пр. Дзержинского 94</NavLink></MenuItem>        
+        <MenuItem className={s.qweqw} onClick={handleClose}><NavLink to='/Wogy_Malinovka'>Магазин ул. Чюрлёниса 4</NavLink></MenuItem>
+        <MenuItem sx={{
+        color: 'dimgrey',
+        fontFamily: "pfdintextcondpro",
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: '20px',
+      }} onClick={handleClose}><NavLink to='/WogyBY'>Магазин пр. Дзержинского 94</NavLink></MenuItem>        
         <div></div>
         <div></div>
       </Menu>
