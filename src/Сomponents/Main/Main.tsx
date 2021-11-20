@@ -1,9 +1,10 @@
-import Map from '../Map/Map';
+import Maps from '../Maps/Maps';
 import s from './Main.module.scss';
 
 const Main=()=>(
   <main className={s.main}>
-      <Map/>
+    
+    <Maps/>
   </main>
 )
 export default Main
