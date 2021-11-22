@@ -1,5 +1,4 @@
 import wogyLogoDark from '../../resources/pictures/wogyDark.png'
-import wogyText3 from '../../resources/pictures/wogy-text-3.png'
 import s from './Footer.module.scss';
 
 const Footer=()=>(
@@ -29,9 +28,7 @@ const Footer=()=>(
             <div className={s.FooterText}>Магазин Дзержинского</div>
         </div>      
         <div>
-          {/* <img src={wogyLogoDark} alt="" /> */}
-          {/* <img src={wogyText3} alt="" /> */}
-
+          <img className={s.FooterImg} src={wogyLogoDark} alt="" />
         </div>
       </footer>
 )

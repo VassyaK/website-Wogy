@@ -13,7 +13,7 @@ import WogyMal12 from '../../Assets/WogyMal12.jpg'
 import WogyMal13 from '../../Assets/WogyMal13.jpg'
 import WogyMal14 from '../../Assets/WogyMal14.jpg'
 
-export default [
+export  const images =[
   {
     title: 'Wogy Malinovka',
     discription: 'Wogy Malinovka 1',
