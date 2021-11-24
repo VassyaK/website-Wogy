@@ -12,8 +12,20 @@ import WogyMal11 from '../../Assets/WogyMal11.jpg'
 import WogyMal12 from '../../Assets/WogyMal12.jpg'
 import WogyMal13 from '../../Assets/WogyMal13.jpg'
 import WogyMal14 from '../../Assets/WogyMal14.jpg'
+import WogyBY1 from '../../Assets/wogyBY1.jpg'
+import WogyBY2 from '../../Assets/wogyBY2.jpg'
+import WogyBY3 from '../../Assets/wogyBY3.jpg'
+import WogyBY4 from '../../Assets/wogyBY4.jpg'
+import WogyBY5 from '../../Assets/wogyBY5.jpg'
+import WogyBY6 from '../../Assets/wogyBY6.jpg'
+import WogyBY7 from '../../Assets/wogyBY7.jpg'
+import WogyBY8 from '../../Assets/wogyBY8.jpg'
+import WogyBY9 from '../../Assets/wogyBY9.jpg'
+import WogyBY10 from '../../Assets/wogyBY10.jpg'
+import WogyBY11 from '../../Assets/wogyBY11.jpg'
+import WogyBY12 from '../../Assets/wogyBY12.jpg'
 
-export  const images =[
+export  const imagesWM =[
   {
     title: 'Wogy Malinovka',
     discription: 'Wogy Malinovka 1',
@@ -85,3 +97,71 @@ export  const images =[
     urls: WogyMal14,
   },
 ];
+export  const imagesWB =[
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 1',
+    urls: WogyBY1,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 2',
+    urls: WogyBY2,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 3',
+    urls: WogyBY3,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 4',
+    urls: WogyBY4,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 5',
+    urls: WogyBY5,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 6',
+    urls: WogyBY6,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 7',
+    urls: WogyBY1,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 1',
+    urls: WogyBY7,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 8',
+    urls: WogyBY8,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 9',
+    urls: WogyBY9,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 10',
+    urls: WogyBY10,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 11',
+    urls: WogyBY11,
+  },
+  {
+    title: 'Wogy.by',
+    discription: 'Wogy.by 12',
+    urls: WogyBY12,
+  },
+
+]

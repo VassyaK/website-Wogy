@@ -1,22 +1,7 @@
 import s from './Maps.module.scss';
-import { YMaps, Map, Placemark } from 'react-yandex-maps';
-
-const mapData = {
-  center: [53.855, 27.487],
-  zoom: 14,
-};
-
-const coordinates = [
-  [53.85496, 27.479648],
-  [53.86558, 27.485698]
-];
 
 const Maps = () => (
-  <YMaps>
-    <Map className={s.map} defaultState={mapData}>
-      {coordinates.map(coordinate => <Placemark geometry={coordinate} />)}
-    </Map>
-  </YMaps>
+   <iframe className={s.map} src="https://yandex.ru/map-widget/v1/?um=constructor%3A80a26df21fc70e7ef27d75495e0903c240f0e32c2840a19d2569c3a16fe5d8f7&amp;source=constructor" width="100%" height="600" ></iframe>
 );
 
 export default Maps

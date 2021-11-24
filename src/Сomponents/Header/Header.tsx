@@ -1,4 +1,5 @@
 import wogyLogo from '../../resources/pictures/wogyDark.png'
+import instLogo from '../../resources/pictures/iconInstagram.png'
 import wogyText11 from '../../resources/pictures/wogy-text-black-11.png'
 import s from './Header.module.scss';
 import { NavLink } from 'react-router-dom';
@@ -28,8 +29,11 @@ const Header =()=>(
         target="wogy"
         rel="noopener noreferrer"
             >
-                
-        Магазин на Чюрлёниса 4
+              <img className={s.instLogo} src={instLogo} alt=""/>
+              <div className={s.flexWrapper}>
+                <div className={s.instUrl}>wogy_malinovka</div>
+                <div className={s.adresStore}>Магазин ул. Чюрлёниса 4</div>
+              </div>
             </a>
             <a className={s.headerLink}
         
@@ -37,7 +41,12 @@ const Header =()=>(
         target="wogy"
         rel="noopener noreferrer"
             >
-        Магазин на пр. Дзержинского 94
+              <img className={s.instLogo} src={instLogo} alt=""/>
+              <div className={s.flexWrapper}>
+                <div className={s.instUrl}>wogy.by</div>
+                <div className={s.adresStore}>Магазин пр. Дзержинского 94</div>
+              </div>
+        
             </a>
       </div>
     </div>

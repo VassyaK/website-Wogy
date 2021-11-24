@@ -22,44 +22,26 @@ export default function BasicMenu() {
         fontFamily: "pfdintextcondpro",
         fontStyle: 'normal',
         fontWeight: 400,
-        fontSize: '20px',
-        // '& .MuiList-root-MuiMenu-list': {
-        //   borderRadius: 0,
-        //   backgroundColor: '#dfc3c4',
-        // },
-      }}
-        
-        // id="basic-button"
-        // aria-controls="basic-menu"
-        // aria-haspopup="true"
-        // className={s.menu}
-        // aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
-        
-      >
+        fontSize: '20px',}
+      }      
+        onClick={handleClick}>
         Магазины
       </Button>
-      <Menu className={s.qweq}
+      <Menu className={s.menuPosition}
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
         MenuListProps={{
           'aria-labelledby': 'basic-button',
-        }}
-        // sx={{
-        //   color: 'dimgrey',
-        //   fontFamily: "pfdintextcondpro",
-        //   fontStyle: 'normal',
-        //   fontWeight: 400,
-        //   fontSize: '20px',
-        //   '& .MuiList-root-MuiMenu-list': {
-        //     borderRadius: 0,
-        //     backgroundColor: '#dfc3c4',
-        //   },
-        // }}
-      >
-        <MenuItem className={s.qweqw} onClick={handleClose}><NavLink to='/Wogy_Malinovka'>Магазин ул. Чюрлёниса 4</NavLink></MenuItem>
+        }}>
+        <MenuItem sx={{
+        color: 'dimgrey',
+        fontFamily: "pfdintextcondpro",
+        fontStyle: 'normal',
+        fontWeight: 400,
+        fontSize: '20px',
+      }} onClick={handleClose}><NavLink to='/Wogy_Malinovka'>Магазин ул. Чюрлёниса 4</NavLink></MenuItem>
         <MenuItem sx={{
         color: 'dimgrey',
         fontFamily: "pfdintextcondpro",

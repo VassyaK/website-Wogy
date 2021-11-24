@@ -1,48 +1,43 @@
 import s from "./Carousel.module.scss";
-import { images } from "./constants";
-// import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import cn from "classnames";
 import { Button } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useRef, useState } from "react";
 
-const Carousel = () => {
-  const carousel = useRef(null);
-  // const Carousel = useRef (null)
-  // const [prev, setPrev] = useState (false)
-  // const [next, setNext] = useState (false)
-  // let position = 0
+interface IProps{
+  images: any[];}
 
-  // const prevHandler = () => {
-  //   if (position === 0) {
-  //     setPrev (true)
-  //   } else {
-  //     position+=300
-  //     setPrev(false)
-  //
-  //   }
-  // }
-  // const nextHandler = () => {
-  //   if (position <=-(images.length - 6)*100) {
-  //     setNext (true)
-  //   } else {
-  //     position -= 300
-  //     setNext(false)
-  //   Carousel.current.childNodes.forEach((element:any) => {
-  //   element.style = `transform: translateX(${position}px)`}
-  // );
+const Carousel: React.FC<IProps> = ({ images }) => {
+  const carousel = useRef(document.createElement("div"));
+  
+  let position = 0
+
   const prevHandler = () => {
-    console.log(carousel.current.childNodes);
-    // carousel.current.childNodes.forEach((element:any) => {
-    //   element.style = `transform: translateX(300px)`
-    // });
-  };
+    console.log(position)
+    if (position !== 0) {     
+      position+= 524      
+      
+    } else {
+      position = -(524 * images.length - 3 * 524)
+    }
+    carousel.current.childNodes.forEach((element:any) => {
+      element.style = `transform: translateX(${position}px)`  
+    })
+ }
   const nextHandler = () => {
-    console.log("next");
+    console.log(position)
+    if (position !== -(images.length - 3) * 524  + 524 ) {
+      position-= 524         
+    } else {
+      position = 0
+    } 
+    carousel.current.childNodes.forEach((element:any) => {
+      element.style = `transform: translateX(${position}px)`
+    });
   };
 
-  return (
+   return (
     <div className={s.Carousel}>
       <div className={s.CarouselTrack} ref={carousel}>
         {images.map((img) => (
